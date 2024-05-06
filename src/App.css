@@ -1,0 +1,84 @@
+.app__hero {
+  box-shadow: 0 0 50px rgb(30, 130, 181);
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.display-pic {
+  height: 250px;
+  width: 250px;
+}
+
+.display-pic img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgb(30, 130, 181);
+}
+
+.fullstack__div {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #1e82b5, white, #1e82b5);
+  color: transparent;
+}
+
+button,
+.resume__class {
+  position: relative;
+}
+
+button::before,
+.resume__class::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e82b5;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+button:hover::before,
+.resume__class:hover::before {
+  transform: scaleX(1.01);
+  border-radius: 0.3rem;
+}
+
+button,
+.resume__class {
+  z-index: 1;
+}
+
+button:active::before {
+  background-color: white;
+}
+
+.app__links a:hover {
+  color: rgb(30, 130, 181);
+}
+
+.resume__class {
+  padding: 5px 10px;
+  border-radius: 0.375rem;
+}
+
+.books li {
+  width: max-content;
+  padding: 20px;
+}
+
+.books img {
+  height: 200px;
+  width: 150px;
+}
+
+.skillItem,
+.booksItem {
+  transition: 0.3s ease-in-out;
+}
+
+.skillItem:hover {
+  box-shadow: 0 0 5px #1e82b5;
+}
