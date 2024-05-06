@@ -15,7 +15,7 @@ function Introduction() {
       <div className="flex flex-col mb-15 justify-center">
         <div className="flex justify-center items-center flex-col">
           <div className="display-pic mb-8">
-            <img src="./src/assets/display_pic.png" alt="" />
+            <img src="./assets/display_pic.png" alt="" />
           </div>
           <div>
             <div>
